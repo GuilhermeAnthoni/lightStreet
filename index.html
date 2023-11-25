@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+    <link rel="stylesheet" type="text/css" href="estilo2.css">
+    <style>
+        * {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+#menu-h {
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h li {
+    display: inline;
+    padding: 20px;
+}
+
+#menu-h li a {
+    padding: 10px;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.product {
+    display: inline-block;
+    width: 40%;
+    margin: 1%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 150px;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+}
+
+footer .container {
+    display: flex;
+    color: white;
+}
+
+footer .container ul {
+    width: 25%;
+}
+
+.logo {
+    width: 100%;
+    height: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo.png" class="logo">
+        <nav class="menu">
+            <ul id="menu-h">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="./produto.html">Produtos</a></li>
+                <li><a href="#">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p></p>
+
+    <h1>DESTAQUE</h1>
+
+    <main>
+        <ul class="product" id="produto1">
+            <img src="img1.png" alt="Produto 1" width="300px">
+            <h2>Air Nike</h2>
+            <p>Camisa Oversized Nike</p>
+            <p class="price">R$ 59,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </ul>
+
+        <ul class="product" id="produto2">
+            <img src="img2.png" alt="Produto 2" width="300px">
+            <h2></h2>
+            <p>Descrição do Produto 2</p>
+            <p class="price">R$ 79,99</p>
+            <button>Adicionar ao Carrinho</button>
+        </ul>
+    </main>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <h3>LightStreet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <div class="redes sociais">
+                    <img src="facebook.png">
+                    <img src="instagram.png">
+                    <img src="whatsapp.png">
+                </div>
+            </ul>
+            <ul>
+                <h3>Link</h3>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="./produto.html">Produtos</a></li>
+                <li><a href="#">Carrinho</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
