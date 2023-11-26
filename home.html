@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightStreet</title>
+    <style>
+        .products{
+            display: flex;
+            margin-top: 50px;
+            margin-left: 20%;
+        }
+        .CardProduct{
+            width: 400px;
+            height: 500px;
+            background-color: #fff;
+            padding-top: 50px;
+            border-style: groove;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .CardProduct:hover{
+            border-style: none;
+            box-shadow: 0px 1px 10px 0px;
+        }
+        .title-item{
+            font-size: 30px;
+            font-family: serif;
+            margin-right: 190px;
+        }
+        .description-item{
+            font-size: 20px;
+            font-family: serif;
+            margin-right: 110px;
+        }
+        .price-item{
+            font-size: 20px;
+            font-family: serif;
+            margin-right: 79px;
+            color: rgb(16, 146, 33);
+        }
+        .btn-cart{
+            width: 140px;
+            height: 30px;
+            background-color: #B0E0E6;
+            font-family: serif;
+            font-size: 14px;
+        }
+        .btn-cart:hover{
+            background-color: #8dbcc2;
+            box-shadow: 0px 1px 5px 1px;
+        }
+
+        body {
+            background-image: linear-gradient(#00000001, #00000063), url(Fundo3.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            padding: 3%;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            font-size: 35px;
+            font-style: italic;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 19px;
+            color: white;
+            border-radius: 30px;
+            transition: 0.6s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(0, 123, 225);
+        }
+
+        header {
+            background-color: black;
+        }
+
+        footer {
+            background-color: black;
+            width: 100%;
+            position: relative;
+        }
+
+        footer .container {
+            display: flex;
+            color: white;
+        }
+
+        footer ul li {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span>LightStreet</span>
+                </div>
+    
+                <ul>
+                    <li><a href="./Home.html">Home</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="#">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="product-section">
+        <div class="products">
+            <div class="CardProduct" align="center">
+                <div>
+                    <img src="./img1.png" width="300px" height="300px">
+                </div>
+                <div>
+                   <span class="title-item"><b>Air Nike</b></span><br>
+                   <span class="description-item">Camisa Oversized Nike</span><br>
+                   <span class="price-item">R$ 59,99</span>
+                   <input class="btn-cart" type="button" name="btn-cart" id="btn-cart" value="Adicionar ao Carrinho">
+                </div>
+            </div>
+            <div class="CardProduct" align="center">
+                <div>
+                    <img src="./img2.png" width="300px" height="300px">
+                </div>
+                <div>
+                   <span class="title-item"><b>Sufgang</b></span><br>
+                   <span class="description-item">Camisa Oversized Suf</span><br>
+                   <span class="price-item">R$ 49,99</span>
+                   <input class="btn-cart" type="button" name="btn-cart" id="btn-cart" value="Adicionar ao Carrinho">
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="CardProduct" align="center">
+                <div>
+                    <img src="./img3.png" width="300px" height="300px">
+                </div>
+                <div>
+                   <span class="title-item"><b>Datum</b></span><br>
+                   <span class="description-item">Camisa Oversized Datum</span><br>
+                   <span class="price-item">R$ 59,99</span>
+                   <input class="btn-cart" type="button" name="btn-cart" id="btn-cart" value="Adicionar ao Carrinho">
+                </div>
+            </div>
+            <div class="CardProduct" align="center">
+                <div>
+                    <img src="./img4.png" width="300px" height="300px">
+                </div>
+                <div>
+                   <span class="title-item"><b>Cry</b></span><br>
+                   <span class="description-item">Camisa Oversized Cry</span><br>
+                   <span class="price-item">R$ 59,99</span>
+                   <input class="btn-cart" type="button" name="btn-cart" id="btn-cart" value="Adicionar ao Carrinho">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <h3>LightStreet</h3>
+                <p> Bem-vindo à Light Street, onde a moda encontra o seu caminho para iluminar o seu estilo de vida.
+                </p>
+            </ul>
+            <ul>
+                <h3>Link</h3>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="#">Carrinho</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
